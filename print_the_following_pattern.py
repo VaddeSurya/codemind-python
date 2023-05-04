@@ -1,9 +1,6 @@
 N = int(input())
 
-for i in range(N):
-    for j in range(N):
-        if i == j or i+j == N-1:
-            print('x', end='')
-        else:
-            print('0', end='')
+for i in range(N, 0, -1):
+    for j in range(1, i+1):
+        print(j, end="")
     print()
