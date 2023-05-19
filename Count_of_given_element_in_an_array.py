@@ -1,0 +1,5 @@
+n=int(input())
+array=list(map(int, input().split()))
+m=int(input())
+count=array.count(m)
+print(count)
