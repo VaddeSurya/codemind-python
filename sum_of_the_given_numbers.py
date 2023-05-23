@@ -1,5 +1,5 @@
 n = int(input())
-
-for i in range(n): 
+for _ in range(n):
     a, b = map(int, input().split())
-    print(a + b) 
+    sum_ab = a + b
+    print(sum_ab)
