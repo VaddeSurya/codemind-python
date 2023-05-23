@@ -1,0 +1,8 @@
+n, x = input().split()
+n = int(n)
+x = int(x)
+n_str = str(n)
+first = int(n_str[:x])
+last = int(n_str[-x:])
+absdiff = abs(first - last)
+print(absdiff)
