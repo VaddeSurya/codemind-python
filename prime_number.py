@@ -1,10 +1,13 @@
-num = int(input())
-is_prime = True
-for i in range(2, int(num/2)+1):
-    if num % i == 0:
-        is_prime = False
-        break
-if is_prime and num > 1:
+n = int(input())
+prime = True
+if n <= 1:
+    prime = False
+else:
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            prime = False
+            break
+if prime:
     print("prime")
 else:
     print("not a prime")
