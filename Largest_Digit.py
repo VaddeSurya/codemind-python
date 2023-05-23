@@ -1,8 +1,6 @@
-n = int(input())
-largest_digit = 0
-while n > 0:
-    digit = n % 10
-    if digit > largest_digit:
-        largest_digit = digit
-    n = n // 10
-print(largest_digit)
+n = input()
+largest = 0
+for digit in n:
+    if int(digit) > largest:
+        largest= int(digit)
+print(largest)
