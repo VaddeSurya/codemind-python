@@ -1,10 +1,7 @@
-def isPerfectSquare(n):
-    if n < 0:
-        return False
-    root = int(n**0.5)
-    return root * root == n
+
 n = int(input())
-if isPerfectSquare(n):
-    print("True")
+sqrt_n = n ** 0.5
+if sqrt_n.is_integer():
+    print(True)
 else:
-    print("False")
+    print(False)
