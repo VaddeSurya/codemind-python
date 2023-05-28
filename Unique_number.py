@@ -1,9 +1,10 @@
-def unique_number(n):
-    digits = set(str(n))
-    if len(digits) == len(str(n)):
-        return "Unique Number"
-    else:
-        return "Not Unique Number"
-n = int(input())
-result = unique_number(n)
-print(result)
+number = input()
+is_unique = True
+for digit in number:
+    if number.count(digit) > 1:
+        is_unique = False
+        break
+if is_unique:
+    print("Unique Number")
+else:
+    print("Not Unique Number")
