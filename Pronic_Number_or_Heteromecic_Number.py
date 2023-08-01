@@ -1,10 +1,11 @@
-def is_pronic_number(number):
-    for n in range(int(number ** 0.5) + 1):
-        if n * (n + 1) == number:
-            return True
-    return False
 num_input = int(input())
-if is_pronic_number(num_input):
+is_pronic = False
+for n in range(int(num_input ** 0.5) + 1):
+    if n * (n + 1) == num_input:
+        is_pronic = True
+        break
+    
+if is_pronic:
     print("YES")
 else:
     print("NO")
