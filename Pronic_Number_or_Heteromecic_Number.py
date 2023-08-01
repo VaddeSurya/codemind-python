@@ -1,12 +1,11 @@
-import math
-n = int(input())
-pronic = False
-for i in range(int(math.sqrt(n)) + 1):
-    product = i * (i + 1)
-    if product == n:
-        pronic = True
-        break
-if pronic:
+def is_pronic_number(number):
+    for n in range(int(number ** 0.5) + 1):
+        if n * (n + 1) == number:
+            return True
+    return False
+num_input = int(input())
+if is_pronic_number(num_input):
     print("YES")
 else:
     print("NO")
+
