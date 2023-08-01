@@ -1,13 +1,12 @@
-number = int(input())
+num = int(input())
 
-square = number * number
-digit = 0
+sq = num ** 2
+tot = 0
 
-while square > 0:
-    digit += square % 10
-    square //= 10
+for i in str(sq):
+    tot +=int(i)
 
-if digit == number:
+if num == tot:
     print("Neon Number")
 else:
     print("Not Neon Number")
