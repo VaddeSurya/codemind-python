@@ -1,8 +1,8 @@
-n = int(input())
-square = n ** 2
-num_digits = len(str(n))
-last_digits = square % (10 ** num_digits)
-if last_digits == n:
+num = int(input())
+square = num ** 2
+num_dig = len(str(num))
+
+if str(square)[-num_dig:] == str(num):
     print("Automorphic Number")
 else:
     print("Not an Automorphic Number")
