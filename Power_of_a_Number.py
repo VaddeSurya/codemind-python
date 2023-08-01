@@ -1,3 +1,4 @@
-n,m,o=map(int, input().split())
-result=pow(n,m,o)
-print(result)
+a, b, c = map(int, input().split())
+n=a**b
+m=n%c
+print(m)
