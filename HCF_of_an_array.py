@@ -1,11 +1,14 @@
 import math
-size_of_array = int(input())
+def find(arr):
+    hcf = arr[0]
+    for num in arr[1:]:
+        hcf = math.gcd(hcf, num)
+    return hcf
+size = int(input())
 array = list(map(int, input().split()))
 
-if len(array) != size_of_array:
+if len(array) != size:
     print("Error")
 else:
-    hcf = array[0]
-    for num in array[1:]:
-        hcf = math.gcd(hcf, num)
-    print(hcf)
+    result = find(array)
+    print(result)
