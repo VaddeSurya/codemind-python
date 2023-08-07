@@ -1,13 +1,10 @@
 n = int(input())
-
-digit_product = 1
-digit_sum = 0
-
+sum1 = 0
+pro = 1
 while n > 0:
-    digit = n % 10
-    digit_product *= digit
-    digit_sum += digit
+    dig = n % 10
+    sum1 += dig
+    pro *= dig
     n //= 10
-
-result = digit_product - digit_sum
+result = pro - sum1
 print(result)
