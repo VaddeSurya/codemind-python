@@ -1,17 +1,13 @@
-def reverse_integer(number):
-    negative = False
-    if number < 0:
-        negative = True
-        number = abs(number)
-    reversed_str = str(number)[::-1]
-    reversed_number = int(reversed_str)
-    if negative:
-        reversed_number = -reversed_number
-    
-    return reversed_number
-try:
-    num_input = int(input())
-    reversed_num = reverse_integer(num_input)
-    print(reversed_num)
-except ValueError:
-    print("Invalid input. Please enter a valid integer.")
+n=int(input())
+rev=0
+revNEG=False
+if(n<0):
+    revNEG=True
+    n=abs(n)
+while(n!=0):
+    dig=n%10
+    rev=(rev*10)+dig
+    n//=10
+if revNEG:
+    rev=-rev
+print(rev)
