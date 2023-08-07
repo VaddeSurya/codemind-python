@@ -1,17 +1,19 @@
-number = input()
+num = int(input())
 
-has_even = False
-has_odd = False
+all_even = True
+all_odd = True
 
-for digit in number:
-    if int(digit) % 2 == 0:
-        has_even = True
+while num != 0:
+    digit = num % 10
+    if digit % 2 == 0:
+        all_odd = False
     else:
-        has_odd = True
+        all_even = False
+    num //= 10
 
-if has_even and has_odd:
-    print("Mixed")
-elif has_even:
+if all_even:
     print("Even")
-else:
+elif all_odd:
     print("Odd")
+else:
+    print("Mixed")
