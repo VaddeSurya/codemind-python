@@ -1,17 +1,12 @@
-def checkSpy(num):
-	sums = 0
-	product = 1
-	while num>0:
-		digit = num % 10
-		sums = sums + digit
-		product = product * digit
-		num = num // 10
-	if sums == product:
-		return True
-	else:
-		return False
-num = int(input())
-if (checkSpy(num)):
-	print("Spy Number")
+n=int(input())
+sum1=0
+pro=1
+while(n>0):
+    dig=n%10;
+    sum1+=dig;
+    pro*=dig;
+    n//=10
+if(sum1==pro):
+    print("Spy Number")
 else:
-	print("Not Spy Number")
+    print("Not Spy Number")
