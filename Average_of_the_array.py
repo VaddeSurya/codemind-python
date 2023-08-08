@@ -1,5 +1,4 @@
 n=int(input())
-array=list(map(int, input().split()))
-hey=sum(array)
-result=hey/n
-print("{:.2f}".format(result))
+arr=list(map(int,input().split()))
+aver=abs(sum(arr)/len(arr))
+print("{:.2f}".format(aver))
