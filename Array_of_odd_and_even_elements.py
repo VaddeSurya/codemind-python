@@ -1,17 +1,11 @@
-n = int(input())
-array = list(map(int, input().split()))
-
-odd_elements = []
-even_elements = []
-
-for num in array:
-    if num % 2 == 0:
-        even_elements.append(num)
+n=int(input())
+arr7=list(map(int,input().split()))
+arr=[]
+arr2=[]
+for i in arr7:
+    if i%2!=0:
+        arr.append(i)
     else:
-        odd_elements.append(num)
-
-for num in odd_elements:
-    print(num, end=' ')
-
-for num in even_elements:
-    print(num, end=' ')
+        arr2.append(i)
+arr3=arr+arr2
+print(*arr3)
