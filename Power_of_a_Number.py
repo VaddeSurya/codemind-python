@@ -1,4 +1,3 @@
-a, b, c = map(int, input().split())
-n=a**b
-m=n%c
-print(m)
+a,b,c=map(int,input().split())
+res=a**b%c
+print(res)
