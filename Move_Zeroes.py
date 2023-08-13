@@ -7,5 +7,5 @@ for i in arr:
         zeros.append(i)
     else:
         nonzeros.append(i)
-res=zeros+nonzeros
+res=nonzeros+zeros
 print(*res)
